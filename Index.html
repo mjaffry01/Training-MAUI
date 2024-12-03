@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>.NET MAUI Training Program</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS (to be added later) -->
+  <link href="styles.css" rel="stylesheet">
+  
+  <!-- jQuery (to be used later) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- html2pdf.js (to be used later) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  
+  <!-- Custom JS (to be added later) -->
+  <script src="script.js" defer></script>
+  
+  <!-- Optional: Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">.NET MAUI Training</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="modulesDropdown" role="button" data-bs-toggle="dropdown" 
+              aria-expanded="false">
+              Modules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="modulesDropdown">
+              <li><a class="dropdown-item" href="#module1">Module 1: Introduction</a></li>
+              <li><a class="dropdown-item" href="#module2">Module 2: Project Structure & Architecture</a></li>
+              <li><a class="dropdown-item" href="#module3">Module 3: Building UI with XAML</a></li>
+              <li><a class="dropdown-item" href="#module4">Module 4: Navigation & Page Management</a></li>
+              <li><a class="dropdown-item" href="#module5">Module 5: Data Binding & MVVM</a></li>
+              <li><a class="dropdown-item" href="#module6">Module 6: Data and Services</a></li>
+              <li><a class="dropdown-item" href="#module7">Module 7: Advanced UI & Custom Controls</a></li>
+              <li><a class="dropdown-item" href="#module8">Module 8: Platform-Specific Features</a></li>
+              <li><a class="dropdown-item" href="#module9">Module 9: Performance & Security</a></li>
+              <li><a class="dropdown-item" href="#module10">Module 10: Testing, Deployment & Capstone Overview</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#capstone">Capstone Project</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile" class="py-5 bg-light">
+    <div class="container text-center">
+      <img src="imageProfile.jpg" alt="Md Ali Jaffry" class="rounded-circle mb-3" width="150" height="150">
+      <h2 class="mt-3">Md Ali Jaffry</h2>
+      <p class="lead">Senior .NET Developer & Trainer</p>
+      <div class="d-flex justify-content-center mt-3">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="me-3">
+          <i class="fab fa-linkedin fa-2x text-primary"></i>
+        </a>
+        <a href="https://github.com/yourprofile" target="_blank" class="me-3">
+          <i class="fab fa-github fa-2x text-dark"></i>
+        </a>
+        <a href="mailto:youremail@example.com">
+          <i class="fas fa-envelope fa-2x text-danger"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container my-5" id="courseContent">
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="text-center mb-5">
+        <h1>Welcome to the .NET MAUI Training Program</h1>
+        <p class="lead">Learn to build cross-platform applications with .NET MAUI from beginner to advanced levels.</p>
+        <button id="downloadPdf" class="btn btn-primary mt-3">Download Course Content as PDF</button>
+      </div>
+    </section>
+
+    <!-- Module 1: Introduction to .NET MAUI -->
+    <section id="module1">
+      <h2 class="mb-4">Module 1: Introduction to .NET MAUI</h2>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      <h4>1.1 What is .NET MAUI?</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Understand the fundamentals of .NET MAUI.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Overview of .NET MAUI</li>
+            <li>Key Features and Benefits</li>
+            <li>Cross-Platform Capabilities (iOS, Android, Windows, macOS)</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to .NET MAUI and its place in the .NET ecosystem.</li>
+            <li><strong>Discussion:</strong> Compare Xamarin.Forms and .NET MAUI, highlighting improvements and new features.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/what-is-maui" target="_blank">Microsoft .NET MAUI Overview</a></li>
+            <li>Introductory Videos from Microsoft Learn</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>1.2 Setting Up the Development Environment</h4>
+      <p><strong>Duration:</strong> 2 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Install and configure the necessary tools for .NET MAUI development.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Installing Visual Studio 2022 or later with .NET MAUI workload</li>
+            <li>.NET SDK Installation</li>
+            <li>Configuring Emulators/Simulators for Different Platforms (Android, iOS, Windows)</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Hands-On Lab:</strong> Step-by-step installation of Visual Studio and .NET MAUI.</li>
+            <li><strong>Exercise:</strong> Create and run the default .NET MAUI "Hello World" application on multiple platforms.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/get-started/installation" target="_blank">Installing .NET MAUI</a></li>
+            <li>Official Visual Studio Installation Guides</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 2: Project Structure & Architecture -->
+    <section id="module2">
+      <h2 class="mb-4">Module 2: Project Structure & Architecture</h2>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      
+      <h4>2.1 Understanding Project Templates and Structure</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Explore different project templates available in .NET MAUI.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Overview of .NET MAUI Project Templates</li>
+            <li>Shared vs. Platform-Specific Projects</li>
+            <li>Important Folders and Files Explained</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Deep dive into the project structure of a .NET MAUI application.</li>
+            <li><strong>Hands-On Lab:</strong> Create projects using different templates and explore their structures.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/project-structure" target="_blank">Project Structure Documentation</a></li>
+            <li>Sample Projects on GitHub</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>2.2 MVVM Pattern in .NET MAUI</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Learn the Model-View-ViewModel (MVVM) architectural pattern.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>MVVM Fundamentals</li>
+            <li>Binding ViewModels to Views</li>
+            <li>Benefits of MVVM in Cross-Platform Development</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to MVVM and its components.</li>
+            <li><strong>Hands-On Lab:</strong> Refactor a basic app to follow the MVVM pattern.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/mvvm" target="_blank">MVVM in .NET MAUI</a></li>
+            <li>MVVM Tutorials and Examples</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 3: Building UI with XAML -->
+    <section id="module3">
+      <h2 class="mb-4">Module 3: Building UI with XAML</h2>
+      <p><strong>Duration:</strong> 4 Hours</p>
+      
+      <h4>3.1 XAML Fundamentals</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Understand XAML syntax and structure for designing user interfaces.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>XAML Syntax and Structure</li>
+            <li>Common Controls: Labels, Buttons, Entries, Images</li>
+            <li>Binding Contexts and Data Binding Basics</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Overview of XAML and its role in .NET MAUI.</li>
+            <li><strong>Hands-On Lab:</strong> Create a simple UI using XAML, adding and configuring basic controls.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/xaml/" target="_blank">XAML Basics</a></li>
+            <li>XAML Tutorials on Microsoft Learn</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>3.2 Layouts in .NET MAUI</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Learn different layout containers and their usage in .NET MAUI.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>StackLayout, Grid, FlexLayout, AbsoluteLayout</li>
+            <li>Best Practices for Responsive Design</li>
+            <li>Nesting Layouts for Complex UI</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Detailed explanation of various layout containers.</li>
+            <li><strong>Hands-On Lab:</strong> Build UIs using different layouts, experimenting with nested layouts.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/user-interface/layouts/" target="_blank">Layouts in .NET MAUI</a></li>
+            <li>Sample Layouts and Design Patterns</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>3.3 Styling and Theming</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Apply consistent styling across the application.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Resource Dictionaries for Styling</li>
+            <li>Defining and Applying Styles</li>
+            <li>DynamicResource and Theming Techniques</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to styling and theming in .NET MAUI.</li>
+            <li><strong>Hands-On Lab:</strong> Create and apply styles using Resource Dictionaries and implement theme switching.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/user-interface/styles/" target="_blank">Styling and Theming</a></li>
+            <li>Theming Examples and Templates</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 4: Navigation & Page Management -->
+    <section id="module4">
+      <h2 class="mb-4">Module 4: Navigation & Page Management</h2>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      
+      <h4>4.1 Navigation Basics</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Understand basic navigation patterns in .NET MAUI.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Stack-Based Navigation</li>
+            <li>Modal Navigation</li>
+            <li>Passing Data Between Pages</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Overview of navigation techniques.</li>
+            <li><strong>Hands-On Lab:</strong> Implement navigation between multiple pages using both stack and modal approaches.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/shell/navigation" target="_blank">Navigation in .NET MAUI</a></li>
+            <li>Sample Navigation Scenarios</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>4.2 Introduction to Shell</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Utilize .NET MAUI Shell for advanced navigation and UI structure.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Setting Up Shell in a Project</li>
+            <li>Defining Routes and Navigation Paths</li>
+            <li>Flyout Menu and TabBar Configuration</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Benefits and features of using Shell.</li>
+            <li><strong>Hands-On Lab:</strong> Configure Shell in a project, create a Flyout menu, and set up TabBar navigation.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/shell/" target="_blank">Using Shell</a></li>
+            <li>Shell Templates and Examples</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 5: Data Binding & MVVM -->
+    <section id="module5">
+      <h2 class="mb-4">Module 5: Data Binding & MVVM</h2>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      
+      <h4>5.1 Data Binding Fundamentals</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Grasp the concepts of data binding and how it facilitates UI updates.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Binding Modes: OneWay, TwoWay, OneTime, etc.</li>
+            <li>Binding Expressions and Syntax</li>
+            <li>Value Converters for Data Transformation</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Detailed exploration of data binding mechanisms.</li>
+            <li><strong>Hands-On Lab:</strong> Implement basic data binding in a UI and create custom value converters.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/data-binding/" target="_blank">Data Binding in .NET MAUI</a></li>
+            <li>Value Converter Examples</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>5.2 Implementing MVVM in .NET MAUI</h4>
+      <p><strong>Duration:</strong> 2 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Apply the MVVM pattern to structure applications for better maintainability and testability.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Creating Models, Views, and ViewModels</li>
+            <li>Binding ViewModels to Views</li>
+            <li>Implementing Commands and the ICommand Interface</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> In-depth discussion on implementing MVVM.</li>
+            <li><strong>Hands-On Lab:</strong> Develop a ViewModel for a sample app and implement commands for buttons and other controls.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/mvvm/" target="_blank">MVVM Implementation Guide</a></li>
+            <li>MVVM Frameworks (e.g., CommunityToolkit.MVVM)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 6: Data and Services -->
+    <section id="module6">
+      <h2 class="mb-4">Module 6: Data and Services</h2>
+      <p><strong>Duration:</strong> 4 Hours</p>
+      
+      <h4>6.1 Consuming RESTful APIs</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Learn to fetch and display data from external APIs.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Using HttpClient for API Calls</li>
+            <li>Handling Asynchronous Operations with Async and Await</li>
+            <li>Parsing JSON Data with System.Text.Json</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Overview of RESTful APIs and data consumption.</li>
+            <li><strong>Hands-On Lab:</strong> Create a service to consume a public API (e.g., Weather API) and display fetched data in the UI.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/data/web-services/" target="_blank">Consuming Web APIs</a></li>
+            <li>Sample API Projects</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>6.2 Local Data Storage</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Implement local data storage solutions for offline capabilities.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Setting Up SQLite in .NET MAUI</li>
+            <li>Using Preferences and Secure Storage for Simple Data</li>
+            <li>Data Persistence Strategies</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to local data storage options.</li>
+            <li><strong>Hands-On Lab:</strong> Set up SQLite in a project, create a database, and perform CRUD operations.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/data/sqlite/" target="_blank">SQLite in .NET MAUI</a></li>
+            <li>SQLite Tutorials and Examples</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>6.3 Dependency Injection and Services</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Understand the principles of Dependency Injection (DI) in .NET MAUI.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Setting Up Dependency Injection in .NET MAUI</li>
+            <li>Registering and Resolving Services</li>
+            <li>Creating Data Services, Logging Services, etc.</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Benefits and implementation of DI.</li>
+            <li><strong>Hands-On Lab:</strong> Configure DI in a project, create a data retrieval service, and inject it into ViewModels.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/dependency-injection" target="_blank">Dependency Injection in .NET MAUI</a></li>
+            <li>DI Examples and Best Practices</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 7: Advanced UI & Custom Controls -->
+    <section id="module7">
+      <h2 class="mb-4">Module 7: Advanced UI & Custom Controls</h2>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      
+      <h4>7.1 Custom Controls and Templates</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Create reusable custom controls to enhance UI consistency and functionality.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Building Custom Controls in .NET MAUI</li>
+            <li>Creating and Applying Data Templates</li>
+            <li>Implementing Control Templates for Enhanced UI Customization</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Strategies for creating and using custom controls.</li>
+            <li><strong>Hands-On Lab:</strong> Develop a custom styled button and apply data templates to ListViews or CollectionViews.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/user-interface/controls/custom" target="_blank">Custom Controls Guide</a></li>
+            <li>Template Examples and Repositories</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>7.2 Animations and Graphics</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Enhance user experience with animations and custom graphics.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Creating Animations Using .NET MAUI Animations API</li>
+            <li>Implementing Simple and Complex Animations</li>
+            <li>Using SkiaSharp for Custom Graphics and Drawings</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to animations and graphics in .NET MAUI.</li>
+            <li><strong>Hands-On Lab:</strong> Implement basic animations (e.g., fade, slide) and draw custom graphics using SkiaSharp.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/user-interface/animation/" target="_blank">Animations in .NET MAUI</a></li>
+            <li><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/graphics/skiasharp/" target="_blank">SkiaSharp Documentation</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 8: Platform-Specific Features -->
+    <section id="module8">
+      <h2 class="mb-4">Module 8: Platform-Specific Features</h2>
+      <p><strong>Duration:</strong> 4 Hours</p>
+      
+      <h4>8.1 Accessing Native APIs</h4>
+      <p><strong>Duration:</strong> 2 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Integrate platform-specific functionalities into a .NET MAUI application.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Using DependencyService for Platform-Specific Code</li>
+            <li>Leveraging Platform-Specific Libraries and APIs</li>
+            <li>Best Practices for Cross-Platform Compatibility</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Overview of accessing native APIs and platform-specific code.</li>
+            <li><strong>Hands-On Lab:</strong> Implement a feature that accesses a native API (e.g., camera access) and test it on different platforms.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/platform-integration/" target="_blank">Platform-Specifics in .NET MAUI</a></li>
+            <li>Sample Projects with Native API Integrations</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>8.2 Handling Permissions</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Manage and request permissions securely across different platforms.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Requesting Permissions on iOS and Android</li>
+            <li>Managing Permission States</li>
+            <li>Secure Permissions Handling Practices</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Understanding permissions and their importance.</li>
+            <li><strong>Hands-On Lab:</strong> Implement permission requests for sensitive features (e.g., location, camera) and handle permission denial gracefully.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/platform-integration/permissions/" target="_blank">Permissions in .NET MAUI</a></li>
+            <li>Permission Handling Examples</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>8.3 Integrating Native UI Elements</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Incorporate native UI controls and features to enhance application functionality.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Using Custom Renderers and Handlers</li>
+            <li>Integrating Native Controls (e.g., Maps, Sensors)</li>
+            <li>Styling and Customizing Native Elements</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to custom renderers and handlers.</li>
+            <li><strong>Hands-On Lab:</strong> Integrate a native UI element (e.g., Map control) into the app and customize its appearance.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/user-interface/handlers/" target="_blank">Custom Handlers in .NET MAUI</a></li>
+            <li>Native Control Integration Guides</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 9: Performance & Security -->
+    <section id="module9">
+      <h2 class="mb-4">Module 9: Performance & Security</h2>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      
+      <h4>9.1 Performance Optimization</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Optimize application performance for a smoother user experience.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Profiling and Diagnosing Performance Issues</li>
+            <li>Optimizing UI Rendering and Data Loading</li>
+            <li>Memory Management and Resource Optimization</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Strategies for enhancing application performance.</li>
+            <li><strong>Hands-On Lab:</strong> Use profiling tools to identify bottlenecks and apply optimization techniques to improve performance.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/performance/" target="_blank">Performance Best Practices</a></li>
+            <li>Profiling Tools (e.g., Visual Studio Profiler)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>9.2 Security Best Practices</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Implement security measures to protect data and user privacy.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Secure Data Storage and Transmission</li>
+            <li>Implementing Authentication (e.g., OAuth, JWT)</li>
+            <li>Authorization Strategies</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Overview of security considerations in mobile and desktop applications.</li>
+            <li><strong>Hands-On Lab:</strong> Encrypt sensitive data, set up authentication mechanisms, and implement authorization in a sample app.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/fundamentals/security/" target="_blank">Security in .NET MAUI</a></li>
+            <li>Authentication and Authorization Tutorials</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Module 10: Testing, Deployment & Capstone Overview -->
+    <section id="module10">
+      <h2 class="mb-4">Module 10: Testing, Deployment & Capstone Overview</h2>
+      <p><strong>Duration:</strong> 4 Hours</p>
+      
+      <h4>10.1 Unit Testing and UI Testing</h4>
+      <p><strong>Duration:</strong> 1.5 Hours</p>
+      <ul>
+        <li><strong>Objectives:</strong> Ensure application reliability through comprehensive testing.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Setting Up Testing Frameworks (e.g., xUnit, NUnit, MSTest)</li>
+            <li>Writing and Running Unit Tests for ViewModels and Services</li>
+            <li>Implementing UI Tests with MAUI Test Frameworks</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Importance of testing and types of tests.</li>
+            <li><strong>Hands-On Lab:</strong> Write unit tests for ViewModels and implement basic UI tests for user flows.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/testing/" target="_blank">Testing in .NET MAUI</a></li>
+            <li>Sample Test Projects</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>10.2 Continuous Integration and Deployment (CI/CD)</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Automate build and deployment processes to enhance development workflow.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Overview of CI/CD Concepts</li>
+            <li>Setting Up CI/CD Pipelines with GitHub Actions or Azure DevOps</li>
+            <li>Automating Builds and Deployments for Multiple Platforms</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Introduction to CI/CD and its benefits.</li>
+            <li><strong>Hands-On Lab:</strong> Configure a CI/CD pipeline for a .NET MAUI project using GitHub Actions or Azure DevOps and test automated deployments.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/get-started/ci-cd" target="_blank">CI/CD with .NET MAUI</a></li>
+            <li>GitHub Actions and Azure DevOps Documentation</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>10.3 Publishing Applications</h4>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Learn the steps to publish applications to various app stores.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Preparing Apps for the App Store, Google Play, and Microsoft Store</li>
+            <li>Generating App Signatures and Packages</li>
+            <li>Creating App Store Listings and Handling Submissions</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Overview of the publishing process for different platforms.</li>
+            <li><strong>Hands-On Lab:</strong> Create app store listings, generate necessary app signatures, and prepare the app for submission.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/get-started/publish" target="_blank">Publishing .NET MAUI Apps</a></li>
+            <li>App Store Guidelines and Submission Processes</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>10.4 Capstone Project Overview</h4>
+      <p><strong>Duration:</strong> 0.5 Hour</p>
+      <ul>
+        <li><strong>Objectives:</strong> Introduce the capstone project that integrates all learned concepts.</li>
+        <li><strong>Topics:</strong>
+          <ul>
+            <li>Project Requirements and Scope</li>
+            <li>UI/UX Design Considerations</li>
+            <li>Planning Architecture Using MVVM</li>
+          </ul>
+        </li>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li><strong>Lecture:</strong> Detailed explanation of the capstone project.</li>
+            <li><strong>Workshop:</strong> Form project teams (if applicable) and begin initial planning.</li>
+          </ul>
+        </li>
+        <li><strong>Resources:</strong>
+          <ul>
+            <li>Capstone Project Guidelines Document</li>
+            <li>Project Management Tools (e.g., Trello, Jira)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Capstone Project -->
+    <section id="capstone">
+      <h2 class="mb-4">Capstone Project</h2>
+      <p><strong>Duration:</strong> 5 Hours</p>
+      
+      <h4>Project Overview:</h4>
+      <p>Participants will apply all the concepts learned throughout the training to build a complete, real-world .NET MAUI application. This project will encompass UI design, data handling, platform-specific features, performance optimization, security, testing, and deployment.</p>
+      
+      <h4>Project Phases:</h4>
+      
+      <h5>Phase 1: Planning and Design</h5>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li>Define the application scope and requirements.</li>
+            <li>Design UI/UX mockups using tools like Figma or Sketch.</li>
+            <li>Plan the application architecture using MVVM.</li>
+          </ul>
+        </li>
+        <li><strong>Deliverables:</strong>
+          <ul>
+            <li>Project Requirements Document</li>
+            <li>UI/UX Mockups</li>
+            <li>Architectural Diagram</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h5>Phase 2: Development</h5>
+      <p><strong>Duration:</strong> 3 Hours</p>
+      <ul>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li>Implement UI using XAML and custom controls.</li>
+            <li>Integrate data services and consume APIs.</li>
+            <li>Add platform-specific features as needed (e.g., camera access).</li>
+            <li>Ensure performance optimizations and implement security measures.</li>
+          </ul>
+        </li>
+        <li><strong>Deliverables:</strong>
+          <ul>
+            <li>Functional .NET MAUI Application</li>
+            <li>Source Code Repository (e.g., GitHub)</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h5>Phase 3: Testing and Deployment</h5>
+      <p><strong>Duration:</strong> 1 Hour</p>
+      <ul>
+        <li><strong>Activities:</strong>
+          <ul>
+            <li>Write and execute unit and UI tests.</li>
+            <li>Optimize performance based on profiling results.</li>
+            <li>Prepare the app for deployment to selected platforms.</li>
+            <li>Deploy the application to app stores or as a local installer.</li>
+          </ul>
+        </li>
+        <li><strong>Deliverables:</strong>
+          <ul>
+            <li>Test Reports</li>
+            <li>Deployed Application</li>
+            <li>Deployment Documentation</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h4>Suggested Projects:</h4>
+      <ul>
+        <li><strong>To-Do List Application:</strong> Manage tasks with CRUD operations, data persistence, and UI enhancements.</li>
+        <li><strong>Weather Forecast App:</strong> Fetch and display weather data from a public API with responsive UI.</li>
+        <li><strong>Simple E-Commerce App:</strong> Manage products, cart, and checkout processes with basic authentication.</li>
+      </ul>
+      
+      <h4>Presentation and Evaluation:</h4>
+      <ul>
+        <li><strong>Activity:</strong> Present the completed project, highlighting key features and learning outcomes.</li>
+        <li><strong>Evaluation:</strong> Peer reviews and instructor feedback based on predefined criteria (e.g., functionality, design, code quality).</li>
+      </ul>
+    </section>
+
+    <!-- Additional Training Components -->
+    <section id="additional-components">
+      <h2 class="mb-4">Additional Training Components</h2>
+      
+      <h4>Quizzes and Assessments</h4>
+      <p><strong>Purpose:</strong> Reinforce learning and assess understanding of key concepts.</p>
+      <ul>
+        <li><strong>Frequency:</strong> End of each module.</li>
+        <li><strong>Format:</strong> Multiple-choice questions, short answer questions, and practical tasks.</li>
+        <li><strong>Tools:</strong> Online quiz platforms (e.g., Kahoot, Quizizz) or in-class assessments.</li>
+      </ul>
+      
+      <h4>Hands-On Labs and Exercises</h4>
+      <p><strong>Purpose:</strong> Provide practical experience and reinforce theoretical concepts.</p>
+      <ul>
+        <li><strong>Format:</strong> Guided coding exercises, mini-projects, and scenario-based tasks.</li>
+        <li><strong>Tools:</strong> Visual Studio, Sample Projects, GitHub Repositories.</li>
+      </ul>
+      
+      <h4>Resources and Support</h4>
+      <ul>
+        <li><a href="https://docs.microsoft.com/en-us/dotnet/maui/" target="_blank">Microsoft .NET MAUI Documentation</a></li>
+        <li>Tutorials and Guides: Microsoft Learn, Pluralsight, Udemy courses</li>
+        <li>Community Support: .NET MAUI forums, Stack Overflow, GitHub repositories</li>
+        <li>Mentorship: Access to experienced developers for guidance and troubleshooting.</li>
+      </ul>
+    </section>
+
+    <!-- Delivery Methods and Formats -->
+    <section id="delivery-methods">
+      <h2 class="mb-4">Delivery Methods and Formats</h2>
+      
+      <h4>1. Interactive Lectures and Presentations</h4>
+      <ul>
+        <li><strong>Description:</strong> Engaging slides with visuals and key points to introduce new topics.</li>
+        <li><strong>Tools:</strong> PowerPoint, Prezi, Live Demonstrations.</li>
+      </ul>
+      
+      <h4>2. Hands-On Coding Sessions</h4>
+      <ul>
+        <li><strong>Description:</strong> Live coding demonstrations followed by guided exercises for participants.</li>
+        <li><strong>Tools:</strong> Visual Studio, .NET MAUI Sample Projects.</li>
+      </ul>
+      
+      <h4>3. Quizzes and Assessments</h4>
+      <ul>
+        <li><strong>Description:</strong> Short quizzes to reinforce learning and assess participant understanding.</li>
+        <li><strong>Tools:</strong> Online quiz platforms (e.g., Kahoot, Quizizz), In-Class Assessments.</li>
+      </ul>
+      
+      <h4>4. Project-Based Assignments</h4>
+      <ul>
+        <li><strong>Description:</strong> Mini-projects or tasks that apply the week's learning to real-world scenarios.</li>
+        <li><strong>Tools:</strong> GitHub for version control and collaboration, Project Management Tools (e.g., Trello, Jira).</li>
+      </ul>
+      
+      <h4>5. Capstone Project</h4>
+      <ul>
+        <li><strong>Description:</strong> Building a complete application that integrates all learned concepts, encouraging comprehensive application of skills.</li>
+        <li><strong>Tools:</strong> Visual Studio, Project Management Tools, Collaboration Platforms.</li>
+      </ul>
+    </section>
+
+   
+
+    <!-- Conclusion -->
+    <section id="conclusion">
+      <h2 class="mb-4">Conclusion</h2>
+      <p>This <strong>30-hour training program</strong> for .NET MAUI is meticulously designed to provide a <strong>comprehensive and efficient learning experience</strong>, guiding participants from <strong>beginner</strong> to <strong>advanced</strong> levels. By following this structured approach, learners will gain both the theoretical knowledge and practical skills necessary to develop robust, high-performance cross-platform applications using .NET MAUI.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-primary text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024 John Doe. All rights reserved.</p>
+      <div>
+        <a href="https://www.linkedin.com/in/md-ali-jaffry-57530a274/" target="_blank" class="text-white me-3">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://github.com/mjaffry01" target="_blank" class="text-white me-3">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="mailto:mjaffry02@gmail.com" class="text-white">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
+      </div>
+      <div class="mt-3">
+        <p>Phone: <a href="tel:+919810976296" class="text-white text-decoration-none">+91 98109 76296</a></p>
+        <p>Email: <a href="mailto:mjaffry02@gmail.com" class="text-white text-decoration-none">mjaffry02@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/mjaffry01" target="_blank" class="text-white text-decoration-none">https://github.com/mjaffry01</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
